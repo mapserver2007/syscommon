@@ -1,0 +1,37 @@
+# ヘッダメニュー定義
+
+# 共通設定
+common:
+  host1: summer-lights.dyndns.ws
+  host2: summer-lights.jp
+  doc_root: /usr/local/apache2/htdocs/
+
+# 個別設定
+each:
+  # diarysys4
+  - uri_location: /diarysys4/
+    uri_text: DIARYSYS4
+  # TMAP
+  - uri_location: /tmap/
+    uri_text: TMAP
+  # Choco.Lab
+  - uri_location: /chocolab/
+    uri_text: Choco.Lab
+  # tcliper
+  - uri_location: /tcliper/
+    uri_text: tcliper
+  # tmarker
+  - uri_subdomain: tmarker
+    uri_text: tmarker
+  # Repository
+  - uri_location: /svn/repos/
+    uri_text: Repository
+  # Repository
+  - uri_location: /websvn/
+    uri_text: WebSVN
+  # 過去の遺産
+  - uri_location: /diarysys3/
+    uri_text: 過去の遺産
+  # Top page
+  - uri_location: /
+    uri_text: Top Page

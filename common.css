@@ -1,0 +1,32 @@
+.syscommon_h {
+	color : #999999;
+	border : 1px solid #999999;
+	background : #FFFFFF url(./common.gif) repeat-x scroll center top;
+	background-color : #999999;
+	font-size : small;
+	font-weight : bold;
+	font-family: Meiryo,'メイリオ','Lucida Grande',Verdana,Arial,sans-serif;
+	margin-bottom : 5px;
+	text-align: left;
+	padding: 1px;
+	margin: 5px;
+}
+
+.syscommon_h a {
+	color : #ffffff;
+	padding : 1px 3px;
+	text-decoration : none;
+}
+
+.syscommon_f {
+	color : #ffffff;
+	border : 1px solid #999999;
+	background : #FFFFFF url(./common.gif) repeat-x scroll center top;
+	font-size : small;
+	font-weight : bold;
+	font-family: Meiryo,'メイリオ','Lucida Grande',Verdana,Arial,sans-serif;
+	text-align : center;
+	clear : both;
+	padding: 1px;
+	margin : 5px;
+}

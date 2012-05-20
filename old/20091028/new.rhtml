@@ -1,0 +1,53 @@
+<div id="login_form">
+	<div class="login_origin">
+		<table>
+			<tbody>
+				<tr>
+					<td>
+						<%= image_tag(@path_to_img + "login.png") %>
+					</td>
+					<td>
+						<p class="login_title">LOGIN</p>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+		<% if(@login_failure) %>
+		<div class="login_input">
+			<%= image_tag(@path_to_img + "caution.gif", :size => "24x24") %>
+			<span>ログインに失敗しました</span>
+		</div>
+		<% end %>
+		<% form_tag session_path do -%>
+		<p class="login_input">
+			<label for="login">ユーザID：</label>
+			<%= text_field_tag 'login' %>
+		</p>
+		<p class="login_input">
+			<label for="password">パスワード：</label>
+			<%= password_field_tag 'password' %>
+		</p>
+		<p>
+			<label for="remember_me">ログイン状態を記憶する:</label>
+			<%= check_box_tag 'remember_me' %>
+		</p>
+		<p><%= submit_tag 'Login' %></p>
+		<% end -%>
+	</div>
+	<div class="login_service">
+		<ul>
+			<li>
+				<%= image_tag(@path_to_img + "icon_yahoo.gif") %>
+				Yahoo! JAPAN IDでログイン
+			</li>
+			<li>
+				<%= image_tag(@path_to_img + "icon_hatena.gif") %>
+				Hatena IDでログイン
+			</li>
+			<li>
+				<%= image_tag(@path_to_img + "icon_livedoor.gif") %>
+				<%= link_to "Livedoor IDでログイン", @livedoor_login %>
+			</li>
+		</ul>
+	</div>
+</div>
